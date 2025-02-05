@@ -251,7 +251,7 @@
       <div class="row no-gutters">
 
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/Audync_app.png" data-link="https://apps.apple.com/tw/app/audync/id6740913510?l=en-GB" target="_blank">
+          <a class="portfolio-box" href="#" onclick="showImage('img/portfolio/fullsize/Audync_app.png', 'https://apps.apple.com/tw/app/audync/id6740913510?l=en-GB'); return false;">
             <img class="img-fluid" src="img/portfolio/thumbnails/Audync_app.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
@@ -389,6 +389,69 @@
   <script src="js/creative.min.js"></script>
   <!-- Custom scripts for this template -->
 	<script src="js/stylish-portfolio.min.js"></script>
+
+  <!-- 添加彈出視窗的 HTML -->
+<div id="imageModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="" style="width:100%">
+  </div>
+</div>
+
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#modalImage {
+    cursor: pointer;
+}
+</style>
+
+<script>
+function showImage(imageSrc, targetUrl) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+    
+    modalImg.onclick = function() {
+        window.open(targetUrl, '_blank');
+    }
+    
+    document.querySelector('.close').onclick = function() {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </body>
 
