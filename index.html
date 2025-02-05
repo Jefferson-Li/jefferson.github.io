@@ -459,7 +459,7 @@
       currentTargetUrl = targetUrl;
       
       // 重設圖片載入狀態
-      // imageLoaded = false;
+      imageLoaded = true;
       
       // 顯示 modal
       // modal.style.display = "block";
@@ -469,10 +469,10 @@
       modalImg.src = 'img/portfolio/fullsize/Audync_app.png';
       
       // 監聽圖片載入完成事件
-      modalImg.onload = function() {
-          modal.classList.remove('loading');
-          imageLoaded = true;
-      };
+      // modalImg.onload = function() {
+      //     modal.classList.remove('loading');
+      //     imageLoaded = true;
+      // };
       
       // 圖片點擊事件
       modalImg.onclick = function() {
