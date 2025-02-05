@@ -251,7 +251,7 @@
       <div class="row no-gutters">
 
         <div class="col-lg-4 col-sm-6">
-          <a href="https://apps.apple.com/tw/app/audync/id6740913510?l=en-GB" target="_blank">
+          <a class="portfolio-box" href="img/portfolio/fullsize/Audync_app.png">
             <img class="img-fluid" src="img/portfolio/thumbnails/Audync_app.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
@@ -389,118 +389,6 @@
   <script src="js/creative.min.js"></script>
   <!-- Custom scripts for this template -->
 	<script src="js/stylish-portfolio.min.js"></script>
-
-  <!-- 彈出視窗 HTML -->
-  <div id="imageModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img id="modalImage" src="" alt="" style="width:100%">
-    </div>
-  </div>
-
-  <style>
-  .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.9);
-  }
-
-  .modal-content {
-      margin: auto;
-      display: block;
-      max-width: 90%;
-      max-height: 90vh;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-  }
-
-  .close {
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      cursor: pointer;
-      z-index: 1001;
-  }
-
-  #modalImage {
-      cursor: pointer;
-      max-width: 100%;
-      height: auto;
-  }
-
-  .modal.loading::after {
-      content: "載入中...";
-      color: white;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
-  </style>
-
-  <script>
-  let currentTargetUrl = '';
-  let imageLoaded = false;
-
-  function showImage(imageSrc, targetUrl) {
-      const modal = document.getElementById('imageModal');
-      const modalImg = document.getElementById('modalImage');
-      
-      // 儲存目標 URL
-      currentTargetUrl = targetUrl;
-      
-      // 重設圖片載入狀態
-      imageLoaded = false;
-      
-      // 顯示 modal
-      modal.style.display = "block";
-      modal.classList.add('loading');
-      
-      // 設置圖片來源
-      modalImg.src = imageSrc;
-      
-      // 監聽圖片載入完成事件
-      modalImg.onload = function() {
-          modal.classList.remove('loading');
-          imageLoaded = true;
-      };
-      
-      // 圖片點擊事件
-      modalImg.onclick = function() {
-          if (imageLoaded) {
-              window.open(currentTargetUrl, '_blank');
-          }
-      };
-      
-      // 關閉按鈕事件
-      document.querySelector('.close').onclick = function() {
-          modal.style.display = "none";
-          modalImg.src = ''; // 清除圖片來源
-      };
-      
-      // 點擊背景關閉
-      modal.onclick = function(e) {
-          if (e.target === modal) {
-              modal.style.display = "none";
-              modalImg.src = '';
-          }
-      };
-  }
-
-  // 防止圖片拖曳
-  document.getElementById('modalImage').addEventListener('dragstart', function(e) {
-      e.preventDefault();
-  });
-  </script>
 
 </body>
 
