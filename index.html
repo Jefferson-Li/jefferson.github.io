@@ -251,7 +251,7 @@
       <div class="row no-gutters">
 
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" onclick="showImage('img/portfolio/fullsize/Audync_app.png', 'https://apps.apple.com/tw/app/audync/id6740913510?l=en-GB'); return false;">
+          <a class="portfolio-box" onclick="showImage('https://apps.apple.com/tw/app/audync/id6740913510?l=en-GB');">
             <img class="img-fluid" src="img/portfolio/thumbnails/Audync_app.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
@@ -451,7 +451,7 @@
   let currentTargetUrl = '';
   let imageLoaded = false;
 
-  function showImage(imageSrc, targetUrl) {
+  function showImage(targetUrl) {
       const modal = document.getElementById('imageModal');
       const modalImg = document.getElementById('modalImage');
       
@@ -466,7 +466,7 @@
       modal.classList.add('loading');
       
       // 設置圖片來源
-      modalImg.src = imageSrc;
+      modalImg.src = 'img/portfolio/fullsize/Audync_app.png';
       
       // 監聽圖片載入完成事件
       modalImg.onload = function() {
