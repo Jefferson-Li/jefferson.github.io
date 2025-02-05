@@ -391,12 +391,12 @@
 	<script src="js/stylish-portfolio.min.js"></script>
 
   <!-- 彈出視窗 HTML -->
-  <!-- <div id="imageModal" class="modal">
+  <div id="imageModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <img id="modalImage" src="" alt="" style="width:100%">
+      <img id="modalImage" src="img/portfolio/fullsize/Audync_app.png" alt="" style="width:100%">
     </div>
-  </div> -->
+  </div>
 
   <style>
   .modal {
@@ -453,7 +453,7 @@
 
   function showImage(imageSrc, targetUrl) {
       const modal = document.getElementById('imageModal');
-      // const modalImg = document.getElementById('modalImage');
+      const modalImg = document.getElementById('modalImage');
       
       // 儲存目標 URL
       currentTargetUrl = targetUrl;
@@ -466,32 +466,32 @@
       modal.classList.add('loading');
       
       // 設置圖片來源
-      // modalImg.src = imageSrc;
+      modalImg.src = imageSrc;
       
-      // // 監聽圖片載入完成事件
-      // modalImg.onload = function() {
-      //     modal.classList.remove('loading');
-      //     imageLoaded = true;
-      // };
+      // 監聽圖片載入完成事件
+      modalImg.onload = function() {
+          modal.classList.remove('loading');
+          imageLoaded = true;
+      };
       
-      // // 圖片點擊事件
-      // modalImg.onclick = function() {
-      //     if (imageLoaded) {
-      //         window.open(currentTargetUrl, '_blank');
-      //     }
-      // };
+      // 圖片點擊事件
+      modalImg.onclick = function() {
+          if (imageLoaded) {
+              window.open(currentTargetUrl, '_blank');
+          }
+      };
       
       // 關閉按鈕事件
       document.querySelector('.close').onclick = function() {
           modal.style.display = "none";
-          // modalImg.src = ''; // 清除圖片來源
+          modalImg.src = ''; // 清除圖片來源
       };
       
       // 點擊背景關閉
       modal.onclick = function(e) {
           if (e.target === modal) {
               modal.style.display = "none";
-              // modalImg.src = '';
+              modalImg.src = '';
           }
       };
   }
