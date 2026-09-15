@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="程式遊俠 Jefferson — Backend / AI / App / Web 開發者作品集">
+  <meta name="description" data-i18n-content="meta.description" content="程式遊俠 Jefferson — Backend / AI / App / Web 開發者作品集">
   <meta name="author" content="Jefferson">
-  <title>程式遊俠 Jefferson</title>
+  <title data-i18n="meta.title">程式遊俠 Jefferson</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
@@ -14,28 +14,34 @@
 <body id="top">
   <header class="site-nav" id="siteNav">
     <div class="container nav-inner">
-      <a class="brand" href="#top">程式遊俠 <span>Jefferson</span></a>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="開啟選單" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav-links" id="navLinks" aria-label="主要選單">
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#showcase">Works</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a class="brand" href="#top"><span data-i18n="brand.name">程式遊俠</span> <span class="brand-accent">Jefferson</span></a>
+      <div class="nav-end">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-set-lang="zh" aria-pressed="true">繁中</button>
+          <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" type="button" data-i18n-aria="nav.toggle" aria-label="開啟選單" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="navLinks" data-i18n-aria="nav.main" aria-label="主要選單">
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#showcase" data-i18n="nav.showcase">Works</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <section class="hero" aria-label="首頁介紹">
-    <div class="hero-media" role="img" aria-label="程式碼與紅色背光鍵盤"></div>
+  <section class="hero" data-i18n-aria="hero.aria" aria-label="首頁介紹">
+    <div class="hero-media" role="img" data-i18n-aria="hero.media" aria-label="程式碼與紅色背光鍵盤"></div>
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-content">
-      <h1 class="hero-brand">程式遊俠<br><em>Jefferson</em></h1>
-      <p class="hero-headline">後端出身，持續探索 AI、App 與跨平台開發</p>
+      <h1 class="hero-brand"><span data-i18n="brand.name">程式遊俠</span><br><em>Jefferson</em></h1>
+      <p class="hero-headline" data-i18n="hero.headline">後端出身，持續探索 AI、App 與跨平台開發</p>
       <p class="hero-support">AI DEVELOPMENT / SOFTWARE DEVELOPMENT / APP DEVELOPMENT / WEB DEVELOPMENT</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">查看專案</a>
+        <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">查看專案</a>
         <a class="btn btn-ghost" href="https://github.com/Jefferson-Li" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
@@ -44,19 +50,19 @@
   <section class="section about" id="about">
     <div class="container about-grid reveal">
       <div class="about-copy">
-        <p class="section-label">About</p>
-        <h2 class="section-title">用程式在不同技術棧之間遊走</h2>
-        <p>
+        <p class="section-label" data-i18n="about.label">About</p>
+        <h2 class="section-title" data-i18n="about.title">用程式在不同技術棧之間遊走</h2>
+        <p data-i18n="about.p1">
           我是 Jefferson，品牌「程式遊俠」代表我對技術的態度：以 Java / Spring Boot 後端為根基，
           也動手做 Python 工具與跨平台繪圖 App，並持續把 AI 能力接到實際產品裡。
         </p>
-        <p>
+        <p data-i18n="about.p2">
           近期作品包含本機文件轉換服務 Doc2Any，以及用 React Native、Flutter、Python 實作的繪圖系列。
         </p>
       </div>
       <dl class="about-meta">
         <div>
-          <dt>Focus</dt>
+          <dt data-i18n="about.focus">Focus</dt>
           <dd>Backend · AI · Cross-platform</dd>
         </div>
         <div>
@@ -64,7 +70,7 @@
           <dd>Jefferson-Li</dd>
         </div>
         <div>
-          <dt>Contact</dt>
+          <dt data-i18n="about.contact">Contact</dt>
           <dd>coderanger.jefferson@gmail.com</dd>
         </div>
       </dl>
@@ -73,12 +79,12 @@
 
   <section class="section skills" id="skills">
     <div class="container reveal">
-      <p class="section-label">Skills</p>
-      <h2 class="section-title">技術地圖</h2>
-      <p class="section-lead">從後端 API 到行動端與本機工具，依實際專案整理。</p>
+      <p class="section-label" data-i18n="skills.label">Skills</p>
+      <h2 class="section-title" data-i18n="skills.title">技術地圖</h2>
+      <p class="section-lead" data-i18n="skills.lead">從後端 API 到行動端與本機工具，依實際專案整理。</p>
       <div class="skill-groups">
         <article class="skill-group">
-          <h3>Backend</h3>
+          <h3 data-i18n="skills.backend">Backend</h3>
           <ul class="skill-tags">
             <li>Java</li>
             <li>Spring Boot</li>
@@ -89,7 +95,7 @@
           </ul>
         </article>
         <article class="skill-group">
-          <h3>Languages &amp; Tools</h3>
+          <h3 data-i18n="skills.languages">Languages &amp; Tools</h3>
           <ul class="skill-tags">
             <li>Python</li>
             <li>TypeScript</li>
@@ -99,7 +105,7 @@
           </ul>
         </article>
         <article class="skill-group">
-          <h3>App &amp; Frontend</h3>
+          <h3 data-i18n="skills.app">App &amp; Frontend</h3>
           <ul class="skill-tags">
             <li>React Native</li>
             <li>Flutter</li>
@@ -109,12 +115,12 @@
           </ul>
         </article>
         <article class="skill-group">
-          <h3>Product focus</h3>
+          <h3 data-i18n="skills.product">Product focus</h3>
           <ul class="skill-tags">
-            <li>Document conversion</li>
-            <li>Local tooling</li>
-            <li>AI integration</li>
-            <li>API design</li>
+            <li data-i18n="skills.tag.doc">Document conversion</li>
+            <li data-i18n="skills.tag.local">Local tooling</li>
+            <li data-i18n="skills.tag.ai">AI integration</li>
+            <li data-i18n="skills.tag.api">API design</li>
           </ul>
         </article>
       </div>
@@ -123,27 +129,27 @@
 
   <section class="section projects" id="projects">
     <div class="container reveal">
-      <p class="section-label">GitHub Projects</p>
-      <h2 class="section-title">開源與實驗專案</h2>
-      <p class="section-lead">整理自我 <a class="text-link" href="https://github.com/Jefferson-Li?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a> 中有實質內容的公開倉庫。</p>
+      <p class="section-label" data-i18n="projects.label">GitHub Projects</p>
+      <h2 class="section-title" data-i18n="projects.title">開源與實驗專案</h2>
+      <p class="section-lead" data-i18n-html="projects.lead">整理自我 <a class="text-link" href="https://github.com/Jefferson-Li?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a> 中有實質內容的公開倉庫。</p>
 
-      <div class="project-toolbar" role="tablist" aria-label="專案分類">
-        <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
-        <button class="filter-btn" type="button" data-filter="tool">工具</button>
-        <button class="filter-btn" type="button" data-filter="app">App</button>
-        <button class="filter-btn" type="button" data-filter="backend">Backend</button>
+      <div class="project-toolbar" role="tablist" data-i18n-aria="projects.filterAria" aria-label="專案分類">
+        <button class="filter-btn is-active" type="button" data-filter="all" data-i18n="projects.filter.all">全部</button>
+        <button class="filter-btn" type="button" data-filter="tool" data-i18n="projects.filter.tool">工具</button>
+        <button class="filter-btn" type="button" data-filter="app" data-i18n="projects.filter.app">App</button>
+        <button class="filter-btn" type="button" data-filter="backend" data-i18n="projects.filter.backend">Backend</button>
       </div>
 
       <div class="project-list">
         <a class="project-item" data-category="tool" href="https://github.com/Jefferson-Li/doc2any" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>Doc2Any</h3>
-            <p>本機文件轉換：PDF ↔ DOCX、圖片互轉，支援視覺保版與可編輯重建。</p>
+            <p data-i18n="projects.doc2any">本機文件轉換：PDF ↔ DOCX、圖片互轉，支援視覺保版與可編輯重建。</p>
           </div>
           <div class="project-meta">
-            <span class="chip chip-accent">Featured</span>
+            <span class="chip chip-accent" data-i18n="projects.featured">Featured</span>
             <span class="chip">Python</span>
-            <span class="chip">Tool</span>
+            <span class="chip" data-i18n="projects.chip.tool">Tool</span>
           </div>
           <span class="project-link">Repo</span>
         </a>
@@ -151,7 +157,7 @@
         <a class="project-item" data-category="app" href="https://github.com/Jefferson-Li/react_naitve_drawing_app" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>React Native Drawing App</h3>
-            <p>跨平台繪圖 App，支援 iOS / Android，可調整筆刷與顏色。</p>
+            <p data-i18n="projects.rnDrawing">跨平台繪圖 App，支援 iOS / Android，可調整筆刷與顏色。</p>
           </div>
           <div class="project-meta">
             <span class="chip">TypeScript</span>
@@ -163,7 +169,7 @@
         <a class="project-item" data-category="app" href="https://github.com/Jefferson-Li/flutter_drawing_app" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>Flutter Drawing App</h3>
-            <p>Flutter 繪圖實作：自由繪製、選色、筆刷粗細與一鍵清除。</p>
+            <p data-i18n="projects.flutterDrawing">Flutter 繪圖實作：自由繪製、選色、筆刷粗細與一鍵清除。</p>
           </div>
           <div class="project-meta">
             <span class="chip">Flutter</span>
@@ -175,7 +181,7 @@
         <a class="project-item" data-category="app" href="https://github.com/Jefferson-Li/py_drawing_app" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>Python Drawing App</h3>
-            <p>以 Tkinter 打造的簡潔桌面繪圖程式。</p>
+            <p data-i18n="projects.pyDrawing">以 Tkinter 打造的簡潔桌面繪圖程式。</p>
           </div>
           <div class="project-meta">
             <span class="chip">Python</span>
@@ -187,7 +193,7 @@
         <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/Springboot_call_coindesk_api_demo" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>CoinDesk API Demo</h3>
-            <p>Spring Boot 整合 CoinDesk 匯率 API，含幣別維護與多支 REST 端點。</p>
+            <p data-i18n="projects.coindesk">Spring Boot 整合 CoinDesk 匯率 API，含幣別維護與多支 REST 端點。</p>
           </div>
           <div class="project-meta">
             <span class="chip">Java</span>
@@ -199,7 +205,7 @@
         <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/Spring_boot_RESTFul_API_H2_CRUD_DEMO" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>REST API + H2 CRUD</h3>
-            <p>Spring Boot RESTful API，搭配 H2 的 CRUD 示範。</p>
+            <p data-i18n="projects.h2">Spring Boot RESTful API，搭配 H2 的 CRUD 示範。</p>
           </div>
           <div class="project-meta">
             <span class="chip">Java</span>
@@ -211,7 +217,7 @@
         <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/SpringbootWebSocketDemo" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>Spring Boot WebSocket Demo</h3>
-            <p>即時通訊與 WebSocket 整合練習。</p>
+            <p data-i18n="projects.websocket">即時通訊與 WebSocket 整合練習。</p>
           </div>
           <div class="project-meta">
             <span class="chip">Java</span>
@@ -223,7 +229,7 @@
         <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/SpringbootRabbitMQDemo" target="_blank" rel="noopener noreferrer">
           <div>
             <h3>Spring Boot RabbitMQ Demo</h3>
-            <p>訊息佇列與非同步處理示範。</p>
+            <p data-i18n="projects.rabbitmq">訊息佇列與非同步處理示範。</p>
           </div>
           <div class="project-meta">
             <span class="chip">Java</span>
@@ -237,103 +243,103 @@
 
   <section class="section showcase" id="showcase">
     <div class="container reveal">
-      <p class="section-label">Selected Works</p>
-      <h2 class="section-title">過往作品精選</h2>
-      <p class="section-lead">點擊畫面可放大預覽；有公開連結的作品可另外開啟網站或倉庫。</p>
+      <p class="section-label" data-i18n="showcase.label">Selected Works</p>
+      <h2 class="section-title" data-i18n="showcase.title">過往作品精選</h2>
+      <p class="section-lead" data-i18n="showcase.lead">點擊畫面可放大預覽；有公開連結的作品可另外開啟網站或倉庫。</p>
       <div class="showcase-grid">
         <figure class="showcase-item">
-          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/doc2any.png" data-alt="Doc2Any 網站畫面" aria-label="放大 Doc2Any 畫面">
-            <img src="img/portfolio/fullsize/doc2any.png" alt="Doc2Any 網站畫面" loading="lazy">
+          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/doc2any.png" data-i18n-alt="showcase.doc2any.alt" data-i18n-aria="showcase.doc2any.zoomAria" data-alt="Doc2Any 網站畫面" aria-label="放大 Doc2Any 畫面">
+            <img src="img/portfolio/fullsize/doc2any.png" data-i18n-alt="showcase.doc2any.alt" alt="Doc2Any 網站畫面" loading="lazy">
             <span class="showcase-caption">
-              <span class="cat">Tool</span>
+              <span class="cat" data-i18n="projects.chip.tool">Tool</span>
               <span class="name">Doc2Any</span>
             </span>
           </button>
           <div class="showcase-actions">
-            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/doc2any.png" data-alt="Doc2Any 網站畫面">放大畫面</button>
+            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/doc2any.png" data-i18n-alt="showcase.doc2any.alt" data-alt="Doc2Any 網站畫面" data-i18n="showcase.zoom">放大畫面</button>
             <a class="showcase-btn showcase-btn-accent" href="https://github.com/Jefferson-Li/doc2any" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </figure>
 
         <figure class="showcase-item">
-          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/Audync_app.png" data-alt="Audync App 畫面" aria-label="放大 Audync 畫面">
-            <img src="img/portfolio/fullsize/Audync_app.png" alt="Audync App 畫面" loading="lazy">
+          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/Audync_app.png" data-i18n-alt="showcase.audync.alt" data-i18n-aria="showcase.audync.zoomAria" data-alt="Audync App 畫面" aria-label="放大 Audync 畫面">
+            <img src="img/portfolio/fullsize/Audync_app.png" data-i18n-alt="showcase.audync.alt" alt="Audync App 畫面" loading="lazy">
             <span class="showcase-caption">
               <span class="cat">App</span>
               <span class="name">Audync</span>
             </span>
           </button>
           <div class="showcase-actions">
-            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/Audync_app.png" data-alt="Audync App 畫面">放大畫面</button>
-            <a class="showcase-btn showcase-btn-accent" href="https://audync.com" target="_blank" rel="noopener noreferrer">開啟網站</a>
+            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/Audync_app.png" data-i18n-alt="showcase.audync.alt" data-alt="Audync App 畫面" data-i18n="showcase.zoom">放大畫面</button>
+            <a class="showcase-btn showcase-btn-accent" href="https://audync.com" target="_blank" rel="noopener noreferrer" data-i18n="showcase.openSite">開啟網站</a>
           </div>
         </figure>
 
         <figure class="showcase-item">
-          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/rn_drawing_ios.png" data-alt="React Native Drawing App 畫面" aria-label="放大 React Native Drawing 畫面">
-            <img src="img/portfolio/fullsize/rn_drawing_ios.png" alt="React Native Drawing App 畫面" loading="lazy">
+          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/rn_drawing_ios.png" data-i18n-alt="showcase.rn.alt" data-i18n-aria="showcase.rn.zoomAria" data-alt="React Native Drawing App 畫面" aria-label="放大 React Native Drawing 畫面">
+            <img src="img/portfolio/fullsize/rn_drawing_ios.png" data-i18n-alt="showcase.rn.alt" alt="React Native Drawing App 畫面" loading="lazy">
             <span class="showcase-caption">
               <span class="cat">App</span>
               <span class="name">RN Drawing</span>
             </span>
           </button>
           <div class="showcase-actions">
-            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/rn_drawing_ios.png" data-alt="React Native Drawing App 畫面">放大畫面</button>
+            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/rn_drawing_ios.png" data-i18n-alt="showcase.rn.alt" data-alt="React Native Drawing App 畫面" data-i18n="showcase.zoom">放大畫面</button>
             <a class="showcase-btn showcase-btn-accent" href="https://github.com/Jefferson-Li/react_naitve_drawing_app" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </figure>
 
         <figure class="showcase-item">
-          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/flutter_drawing.png" data-alt="Flutter Drawing App 畫面" aria-label="放大 Flutter Drawing 畫面">
-            <img src="img/portfolio/fullsize/flutter_drawing.png" alt="Flutter Drawing App 畫面" loading="lazy">
+          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/flutter_drawing.png" data-i18n-alt="showcase.flutter.alt" data-i18n-aria="showcase.flutter.zoomAria" data-alt="Flutter Drawing App 畫面" aria-label="放大 Flutter Drawing 畫面">
+            <img src="img/portfolio/fullsize/flutter_drawing.png" data-i18n-alt="showcase.flutter.alt" alt="Flutter Drawing App 畫面" loading="lazy">
             <span class="showcase-caption">
               <span class="cat">App</span>
               <span class="name">Flutter Drawing</span>
             </span>
           </button>
           <div class="showcase-actions">
-            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/flutter_drawing.png" data-alt="Flutter Drawing App 畫面">放大畫面</button>
+            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/flutter_drawing.png" data-i18n-alt="showcase.flutter.alt" data-alt="Flutter Drawing App 畫面" data-i18n="showcase.zoom">放大畫面</button>
             <a class="showcase-btn showcase-btn-accent" href="https://github.com/Jefferson-Li/flutter_drawing_app" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </figure>
 
         <figure class="showcase-item">
-          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/py_drawing.png" data-alt="Python Drawing App 畫面" aria-label="放大 Python Drawing 畫面">
-            <img src="img/portfolio/fullsize/py_drawing.png" alt="Python Drawing App 畫面" loading="lazy">
+          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/py_drawing.png" data-i18n-alt="showcase.py.alt" data-i18n-aria="showcase.py.zoomAria" data-alt="Python Drawing App 畫面" aria-label="放大 Python Drawing 畫面">
+            <img src="img/portfolio/fullsize/py_drawing.png" data-i18n-alt="showcase.py.alt" alt="Python Drawing App 畫面" loading="lazy">
             <span class="showcase-caption">
               <span class="cat">Desktop</span>
               <span class="name">Python Drawing</span>
             </span>
           </button>
           <div class="showcase-actions">
-            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/py_drawing.png" data-alt="Python Drawing App 畫面">放大畫面</button>
+            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/py_drawing.png" data-i18n-alt="showcase.py.alt" data-alt="Python Drawing App 畫面" data-i18n="showcase.zoom">放大畫面</button>
             <a class="showcase-btn showcase-btn-accent" href="https://github.com/Jefferson-Li/py_drawing_app" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </figure>
 
         <figure class="showcase-item">
-          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/SideProject0104.png" data-alt="Funtutu 網站畫面" aria-label="放大 Funtutu 畫面">
-            <img src="img/portfolio/fullsize/SideProject0104.png" alt="Funtutu 網站畫面" loading="lazy">
+          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/SideProject0104.png" data-i18n-alt="showcase.funtutu.alt" data-i18n-aria="showcase.funtutu.zoomAria" data-alt="Funtutu 網站畫面" aria-label="放大 Funtutu 畫面">
+            <img src="img/portfolio/fullsize/SideProject0104.png" data-i18n-alt="showcase.funtutu.alt" alt="Funtutu 網站畫面" loading="lazy">
             <span class="showcase-caption">
               <span class="cat">Web</span>
               <span class="name">Funtutu</span>
             </span>
           </button>
           <div class="showcase-actions">
-            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/SideProject0104.png" data-alt="Funtutu 網站畫面">放大畫面</button>
+            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/SideProject0104.png" data-i18n-alt="showcase.funtutu.alt" data-alt="Funtutu 網站畫面" data-i18n="showcase.zoom">放大畫面</button>
           </div>
         </figure>
 
         <figure class="showcase-item">
-          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/SideProject20220111.PNG" data-alt="聚寶閣網站畫面" aria-label="放大聚寶閣畫面">
-            <img src="img/portfolio/fullsize/SideProject20220111.PNG" alt="聚寶閣網站畫面" loading="lazy">
+          <button type="button" class="showcase-media" data-full="img/portfolio/fullsize/SideProject20220111.PNG" data-i18n-alt="showcase.jubaoge.alt" data-i18n-aria="showcase.jubaoge.zoomAria" data-alt="聚寶閣網站畫面" aria-label="放大聚寶閣畫面">
+            <img src="img/portfolio/fullsize/SideProject20220111.PNG" data-i18n-alt="showcase.jubaoge.alt" alt="聚寶閣網站畫面" loading="lazy">
             <span class="showcase-caption">
               <span class="cat">Web</span>
-              <span class="name">聚寶閣</span>
+              <span class="name" data-i18n="showcase.jubaoge.name">聚寶閣</span>
             </span>
           </button>
           <div class="showcase-actions">
-            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/SideProject20220111.PNG" data-alt="聚寶閣網站畫面">放大畫面</button>
+            <button type="button" class="showcase-btn" data-full="img/portfolio/fullsize/SideProject20220111.PNG" data-i18n-alt="showcase.jubaoge.alt" data-alt="聚寶閣網站畫面" data-i18n="showcase.zoom">放大畫面</button>
           </div>
         </figure>
       </div>
@@ -342,12 +348,12 @@
 
   <section class="section contact" id="contact">
     <div class="container reveal">
-      <p class="section-label">Contact</p>
-      <h2 class="section-title">一起討論下一個專案</h2>
-      <p class="section-lead">有合作、職缺或技術交流，歡迎寄信或上 GitHub 看看。</p>
+      <p class="section-label" data-i18n="contact.label">Contact</p>
+      <h2 class="section-title" data-i18n="contact.title">一起討論下一個專案</h2>
+      <p class="section-lead" data-i18n="contact.lead">有合作、職缺或技術交流，歡迎寄信或上 GitHub 看看。</p>
       <div class="contact-actions">
-        <a class="btn btn-primary" href="mailto:coderanger.jefferson@gmail.com">寄信給我</a>
-        <a class="btn btn-ghost" href="https://github.com/Jefferson-Li" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+        <a class="btn btn-primary" href="mailto:coderanger.jefferson@gmail.com" data-i18n="contact.email">寄信給我</a>
+        <a class="btn btn-ghost" href="https://github.com/Jefferson-Li" target="_blank" rel="noopener noreferrer" data-i18n="contact.github">GitHub Profile</a>
       </div>
       <p class="contact-note">coderanger.jefferson@gmail.com</p>
     </div>
@@ -355,15 +361,15 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© 2019–2026 程式遊俠 Jefferson</span>
-      <span>Built for GitHub Pages</span>
+      <span data-i18n="footer.copy">© 2019–2026 程式遊俠 Jefferson</span>
+      <span data-i18n="footer.built">Built for GitHub Pages</span>
     </div>
   </footer>
 
   <div class="lightbox" id="lightbox" hidden>
     <div class="lightbox-backdrop" data-close-lightbox></div>
-    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="作品畫面預覽">
-      <button type="button" class="lightbox-close" data-close-lightbox aria-label="關閉預覽">×</button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" data-i18n-aria="lightbox.aria" aria-label="作品畫面預覽">
+      <button type="button" class="lightbox-close" data-close-lightbox data-i18n-aria="lightbox.close" aria-label="關閉預覽">×</button>
       <img id="lightboxImage" src="" alt="">
     </div>
   </div>
