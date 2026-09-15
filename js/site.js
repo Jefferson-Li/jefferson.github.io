@@ -63,4 +63,39 @@
       });
     });
   });
+
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImage = document.getElementById("lightboxImage");
+
+  function openLightbox(src, alt) {
+    if (!lightbox || !lightboxImage || !src) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || "";
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    if (!lightbox || !lightboxImage) return;
+    lightbox.hidden = true;
+    lightboxImage.removeAttribute("src");
+    lightboxImage.alt = "";
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll("[data-full]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      openLightbox(el.getAttribute("data-full"), el.getAttribute("data-alt"));
+    });
+  });
+
+  if (lightbox) {
+    lightbox.querySelectorAll("[data-close-lightbox]").forEach(function (el) {
+      el.addEventListener("click", closeLightbox);
+    });
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") closeLightbox();
+  });
 })();
