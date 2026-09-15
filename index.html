@@ -1,395 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--************************************************************************* 
-*Copyright © :  程式遊俠 Jefferson 2019
-*dates ：2019/12/23
-*version : 1
-*author： 程式遊俠 Jefferson
-************************************************************************* -->
+<html lang="zh-Hant">
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="程式遊俠 Jefferson — Backend / AI / App / Web 開發者作品集">
   <meta name="author" content="Jefferson">
-
   <title>程式遊俠 Jefferson</title>
-
-  <!-- Font Awesome Icons -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/creative.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
-
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="css/site.css" rel="stylesheet">
 </head>
-
-<body>
-<body id="page-top">
-
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">程式遊俠 Jefferson</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<body id="top">
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">程式遊俠 <span>Jefferson</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
-      <div class=" collapse navbar-collapse" id="navbarResponsive">
-      
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-        
-<!--           <li class="nav-item"> -->
-<!--             <a class="nav-link js-scroll-trigger" href="#about">About</a> -->
-<!--           </li> -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Masthead -->
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Back-end developer</h1>
-          <hr class="divider my-4">
-        </div>
-        <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">AI DEVELOPMENT / SOFTWARE DEVELOPMENT / APP DEVELOPMENT / WEB DEVELOPMENT</p>
-          <a class="btn btn-secondary btn-xl js-scroll-trigger" href="#skills">Find Out More</a>
-        </div>
-      </div>
+      <nav class="nav-links" id="navLinks" aria-label="主要選單">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#showcase">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-<!--   <section class="page-section bg-info" id="about"> -->
-<!--     <div class="container"> -->
-<!--       <div class="row justify-content-center"> -->
-<!--         <div class="col-lg-8 text-center"> -->
-<!--           <h2 class="text-white mt-0">目前會的技術有:</h2> -->
-<!--           <hr class="divider light my-4"> -->
-<!--           <p class="text-white-50 mb-4"> -->
-          
-<!-- 1.前端:HTML、CSS、JavaScript、Bootstrap3、Bootstrap4、RWD響應式網頁。 -->
-
-<!-- 2.後端: -->
-<!-- (1).Java:java web(MVC)、Java Beans、Jsp、Struts、Hibernate、EJB、DAO、DTO、POJO、ant、Junit、JFrame。 -->
-
-<!-- (2).asp.net:VBScript+HTML。 -->
-
-<!-- (3).版本控制:svn、TortoiseSVN、git、maven。 -->
-
-<!-- (4).Server伺服器:Apache Tomcat、 -->
-<!-- IBM WEB Sphere Application Server 9(WAS9)。 -->
-
-<!-- (5).開發工具:Eclipse、Visual Studio、Android Studio、NOX模擬器、Notepad++、Jcreator。 -->
-
-<!-- 3.資料庫:Oracle(PL\SQL)、PostgreSQL、MySQL、MSSQL、NoSQL。 -->
-
-<!-- 4.手機Mobile:Android。 -->
-
-<!-- 5.報表工具使用:iReport、iNet。 -->
-          
-<!--           </p> -->
-<!--           <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
-<!--         </div> -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </section> -->
-
-  <!-- Services Section -->
-  <section class="page-section" id="skills">
-    <div class="container">
-      <h2 class="text-center mt-0">Skills</h2>
-      <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-gem text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-html5 fa-5x text-muted mb-4"></i>
-			</li>
-            <h3 class="h4 mb-2">HTML5</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-laptop-code text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-css3-alt fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">CSS</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-globe text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-js-square fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">JavaScript</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-heart text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-bootstrap fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Bootstrap</h3>
-          </div>
-        </div>
-        </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-gem text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-java fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Java</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-laptop-code text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-android fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Android</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-globe text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-git-alt fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Git</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-heart text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fas fa-database fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">SQL</h3>
-          </div>
-        </div>  
-      </div>
-      
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-gem text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fas fa-server fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Server</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-laptop-code text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-python fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Python</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-globe text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			  <i class="fab fa-github fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Github</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-<!--             <i class="fas fa-4x fa-heart text-muted mb-4"></i> -->
-			<li class="list-inline-item">
-			<i class="fa-brands fa-golang fa-5x text-muted mb-3"></i>
-			</li>
-            <h3 class="h4 mb-2">Golang</h3>
-          </div>
-        </div>  
-      </div>
-      
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/Audync_app.png">
-            <img class="img-fluid" src="img/portfolio/thumbnails/Audync_app.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                APP
-              </div>
-              <div class="project-name">
-                Audync
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/SideProject0104.png">
-            <img class="img-fluid" src="img/portfolio/thumbnails/SideProject0104.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                WEB
-              </div>
-              <div class="project-name">
-                Funtutu
-              </div>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/SideProject20220111.PNG">
-            <img class="img-fluid" src="img/portfolio/thumbnails/SideProject20220111.PNG" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                WEB
-              </div>
-              <div class="project-name">
-                聚寶閣
-              </div>
-            </div>
-          </a>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/comingsoon.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/comingsoon.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/comingsoon.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/comingsoon.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/comingsoon.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/comingsoon.jpg" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
-                Category
-              </div>
-              <div class="project-name">
-                Project Name
-              </div>
-            </div>
-          </a>
-        </div>
+  <section class="hero" aria-label="首頁介紹">
+    <div class="hero-media" role="img" aria-label="程式碼與紅色背光鍵盤"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1 class="hero-brand">程式遊俠<br><em>Jefferson</em></h1>
+      <p class="hero-headline">後端出身，持續探索 AI、App 與跨平台開發</p>
+      <p class="hero-support">AI DEVELOPMENT / SOFTWARE DEVELOPMENT / APP DEVELOPMENT / WEB DEVELOPMENT</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">查看專案</a>
+        <a class="btn btn-ghost" href="https://github.com/Jefferson-Li" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </section>
 
-<!--   <!-- Call to Action Section --> -->
-<!--   <section class="page-section bg-dark text-white"> -->
-<!--     <div class="container text-center"> -->
-<!--       <h2 class="mb-4">Free Download at Start Bootstrap!</h2> -->
-<!--       <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a> -->
-<!--     </div> -->
-<!--   </section> -->
-
-  <!-- Contact Section -->
-  <section class="" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Ready to start your next project with us? send us an email and we will get back to you as soon as possible!</p>
+  <section class="section about" id="about">
+    <div class="container about-grid reveal">
+      <div class="about-copy">
+        <p class="section-label">About</p>
+        <h2 class="section-title">用程式在不同技術棧之間遊走</h2>
+        <p>
+          我是 Jefferson，品牌「程式遊俠」代表我對技術的態度：以 Java / Spring Boot 後端為根基，
+          也動手做 Python 工具、跨平台繪圖 App、LLM 與 Web3 實驗。
+        </p>
+        <p>
+          近期作品包含本機文件轉換服務 Doc2Any，以及用 React Native、Flutter、Python 實作的繪圖系列。
+        </p>
+      </div>
+      <dl class="about-meta">
+        <div>
+          <dt>Focus</dt>
+          <dd>Backend · AI · Cross-platform</dd>
         </div>
+        <div>
+          <dt>GitHub</dt>
+          <dd>Jefferson-Li</dd>
+        </div>
+        <div>
+          <dt>Contact</dt>
+          <dd>coderanger.jefferson@gmail.com</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container reveal">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title">技術地圖</h2>
+      <p class="section-lead">從後端 API 到行動端與本機工具，依實際專案整理。</p>
+      <div class="skill-groups">
+        <article class="skill-group">
+          <h3>Backend</h3>
+          <ul class="skill-tags">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>REST API</li>
+            <li>WebSocket</li>
+            <li>RabbitMQ</li>
+            <li>Microservice</li>
+            <li>SQL / H2 / MySQL</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Languages &amp; Tools</h3>
+          <ul class="skill-tags">
+            <li>Python</li>
+            <li>Golang</li>
+            <li>TypeScript</li>
+            <li>Git / GitHub</li>
+            <li>Maven</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>App &amp; Frontend</h3>
+          <ul class="skill-tags">
+            <li>React Native</li>
+            <li>Flutter</li>
+            <li>Android</li>
+            <li>iOS</li>
+            <li>HTML / CSS / JS</li>
+            <li>Bootstrap</li>
+          </ul>
+        </article>
+        <article class="skill-group">
+          <h3>Exploration</h3>
+          <ul class="skill-tags">
+            <li>LLM</li>
+            <li>Web3</li>
+            <li>Document conversion</li>
+            <li>Local tooling</li>
+          </ul>
+        </article>
       </div>
     </div>
-    
   </section>
-	<center>
-		<div class="col-lg-4 ">
-			<i class="fas fa-envelope fa-3x mb-3 text-muted "></i>
-			<!-- Make sure to change the email address in anchor text AND the link below! -->
-			<!--           <a class="d-block" >qyp1159959@gmail.com</a> -->
-			<h5> coderanger.jefferson@gmail.com </h5>
-		</div>
-	</center>
-        
-  <!-- Footer -->
-  <footer class="bg-light py-5">
-    <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - 程式遊俠Jefferson</div>
+
+  <section class="section projects" id="projects">
+    <div class="container reveal">
+      <p class="section-label">GitHub Projects</p>
+      <h2 class="section-title">開源與實驗專案</h2>
+      <p class="section-lead">整理自我 <a class="text-link" href="https://github.com/Jefferson-Li?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a> 的公開倉庫，依類型篩選。</p>
+
+      <div class="project-toolbar" role="tablist" aria-label="專案分類">
+        <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
+        <button class="filter-btn" type="button" data-filter="tool">工具</button>
+        <button class="filter-btn" type="button" data-filter="app">App</button>
+        <button class="filter-btn" type="button" data-filter="backend">Backend</button>
+        <button class="filter-btn" type="button" data-filter="demo">Demo</button>
+      </div>
+
+      <div class="project-list">
+        <a class="project-item" data-category="tool" href="https://github.com/Jefferson-Li/doc2any" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Doc2Any</h3>
+            <p>本機文件轉換：PDF ↔ DOCX、圖片互轉，支援視覺保版與可編輯重建。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip chip-accent">Featured</span>
+            <span class="chip">Python</span>
+            <span class="chip">Tool</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="app" href="https://github.com/Jefferson-Li/react_naitve_drawing_app" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>React Native Drawing App</h3>
+            <p>跨平台繪圖 App，支援 iOS / Android，可調整筆刷與顏色。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">TypeScript</span>
+            <span class="chip">React Native</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="app" href="https://github.com/Jefferson-Li/flutter_drawing_app" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Flutter Drawing App</h3>
+            <p>Flutter 繪圖實作：自由繪製、選色、筆刷粗細與一鍵清除。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Flutter</span>
+            <span class="chip">Dart</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="app" href="https://github.com/Jefferson-Li/py_drawing_app" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Python Drawing App</h3>
+            <p>以 Tkinter 打造的簡潔桌面繪圖程式。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Python</span>
+            <span class="chip">Tkinter</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/Springboot_call_coindesk_api_demo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>CoinDesk API Demo</h3>
+            <p>Spring Boot 整合 CoinDesk 匯率 API，含幣別維護與多支 REST 端點。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Java</span>
+            <span class="chip">Spring Boot</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/Springboot_Microservice_Demo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Spring Boot Microservice Demo</h3>
+            <p>微服務架構練習與示範專案。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Java</span>
+            <span class="chip">Microservice</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/Spring_boot_RESTFul_API_H2_CRUD_DEMO" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>REST API + H2 CRUD</h3>
+            <p>Spring Boot RESTful API，搭配 H2 的 CRUD 示範。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Java</span>
+            <span class="chip">H2</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/Spring_boot_RESTFul_API_MySQL_CRUD_DEMO" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>REST API + MySQL CRUD</h3>
+            <p>Spring Boot RESTful API，搭配 MySQL 的 CRUD 示範。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Java</span>
+            <span class="chip">MySQL</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/SpringbootWebSocketDemo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Spring Boot WebSocket Demo</h3>
+            <p>即時通訊與 WebSocket 整合練習。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Java</span>
+            <span class="chip">WebSocket</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="backend" href="https://github.com/Jefferson-Li/SpringbootRabbitMQDemo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Spring Boot RabbitMQ Demo</h3>
+            <p>訊息佇列與非同步處理示範。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Java</span>
+            <span class="chip">RabbitMQ</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="demo" href="https://github.com/Jefferson-Li/LLM_demo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>LLM Demo</h3>
+            <p>大型語言模型相關實驗與示範。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">AI</span>
+            <span class="chip">LLM</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="demo" href="https://github.com/Jefferson-Li/golang_demo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Golang Demo</h3>
+            <p>Go 語言基礎與實作練習。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Go</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="demo" href="https://github.com/Jefferson-Li/android_demo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Android Demo</h3>
+            <p>Android 原生開發練習專案。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Android</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="demo" href="https://github.com/Jefferson-Li/ios_demo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>iOS Demo</h3>
+            <p>iOS 開發練習專案。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">iOS</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+
+        <a class="project-item" data-category="demo" href="https://github.com/Jefferson-Li/web3demo" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h3>Web3 Demo</h3>
+            <p>區塊鏈 / Web3 相關探索示範。</p>
+          </div>
+          <div class="project-meta">
+            <span class="chip">Web3</span>
+          </div>
+          <span class="project-link">Repo</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section showcase" id="showcase">
+    <div class="container reveal">
+      <p class="section-label">Selected Works</p>
+      <h2 class="section-title">過往作品精選</h2>
+      <p class="section-lead">App 與 Web 側邊專案畫面。</p>
+      <div class="showcase-grid">
+        <a class="showcase-item" href="img/portfolio/fullsize/Audync_app.png" target="_blank" rel="noopener noreferrer">
+          <img src="img/portfolio/thumbnails/Audync_app.png" alt="Audync App 畫面" loading="lazy">
+          <div class="showcase-caption">
+            <span class="cat">App</span>
+            <span class="name">Audync</span>
+          </div>
+        </a>
+        <a class="showcase-item" href="img/portfolio/fullsize/SideProject0104.png" target="_blank" rel="noopener noreferrer">
+          <img src="img/portfolio/thumbnails/SideProject0104.png" alt="Funtutu 網站畫面" loading="lazy">
+          <div class="showcase-caption">
+            <span class="cat">Web</span>
+            <span class="name">Funtutu</span>
+          </div>
+        </a>
+        <a class="showcase-item" href="img/portfolio/fullsize/SideProject20220111.PNG" target="_blank" rel="noopener noreferrer">
+          <img src="img/portfolio/thumbnails/SideProject20220111.PNG" alt="聚寶閣網站畫面" loading="lazy">
+          <div class="showcase-caption">
+            <span class="cat">Web</span>
+            <span class="name">聚寶閣</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container reveal">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">一起討論下一個專案</h2>
+      <p class="section-lead">有合作、職缺或技術交流，歡迎寄信或上 GitHub 看看。</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:coderanger.jefferson@gmail.com">寄信給我</a>
+        <a class="btn btn-ghost" href="https://github.com/Jefferson-Li" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+      </div>
+      <p class="contact-note">coderanger.jefferson@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2019–2026 程式遊俠 Jefferson</span>
+      <span>Built for GitHub Pages</span>
     </div>
   </footer>
 
-	<!-- Scroll to Top Button-->
-	<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-		<i class="fas fa-angle-up"></i>
-	</a>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
-  <!-- Custom scripts for this template -->
-	<script src="js/stylish-portfolio.min.js"></script>
-
+  <script src="js/site.js"></script>
 </body>
-
 </html>

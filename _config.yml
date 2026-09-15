@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+# Use static site (index.html). Disable remote Jekyll theme wrapper.
+theme: null
+title: 程式遊俠 Jefferson
+description: Backend / AI / App / Web developer portfolio
