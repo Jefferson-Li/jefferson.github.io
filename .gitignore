@@ -1,0 +1,9 @@
+# Chrome headless profile used for local screenshots
+.chrome-tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
