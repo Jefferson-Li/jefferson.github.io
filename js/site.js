@@ -21,9 +21,12 @@
       "about.p1":
         "我是 Jefferson，品牌「程式遊俠」代表我對技術的態度：以 Java / Spring Boot 後端為根基，也動手做 Python 工具與跨平台繪圖 App，並持續把 AI 能力接到實際產品裡。",
       "about.p2":
-        "近期作品包含醫療營運 MCP 專案 CareOps、本機文件轉換服務 Doc2Any，以及用 React Native、Flutter、Python 實作的繪圖系列。",
+        "近期作品包含 Azure 自動修復 Web Tier、醫療營運 MCP 專案 CareOps、本機文件轉換服務 Doc2Any，以及跨平台繪圖系列。",
+      "projects.azureHeal":
+        "Terraform 部署 Azure VMSS + Load Balancer 自動修復 Web Tier，Docker NGINX 提供靜態頁與 /health 探針。",
       "projects.careops":
         "醫療營運 MCP：串接模擬 CareOS、OCR、合規與班表工具，並附 Test Console 瀏覽器檢查清單。",
+      "projects.filter.cloud": "Cloud",
       "about.focus": "Focus",
       "about.contact": "Contact",
       "skills.label": "Skills",
@@ -61,6 +64,8 @@
       "showcase.lead": "點擊畫面可放大預覽；有公開連結的作品可另外開啟網站或倉庫。",
       "showcase.zoom": "放大畫面",
       "showcase.openSite": "開啟網站",
+      "showcase.azureHeal.alt": "Azure Auto-Healing Web 測試頁面",
+      "showcase.azureHeal.zoomAria": "放大 Azure Auto-Healing Web 測試頁面",
       "showcase.careops.alt": "CareOps Test Console 畫面",
       "showcase.careops.zoomAria": "放大 CareOps Test Console 畫面",
       "showcase.doc2any.alt": "Doc2Any 網站畫面",
@@ -109,9 +114,12 @@
       "about.p1":
         "I'm Jefferson. “Code Ranger” is how I approach tech: grounded in Java / Spring Boot, while shipping Python tools and cross-platform drawing apps—and wiring AI into real products.",
       "about.p2":
-        "Recent work includes CareOps (healthcare ops MCP), Doc2Any (local document converter), and drawing apps built with React Native, Flutter, and Python.",
+        "Recent work includes an Azure auto-healing web tier, CareOps (healthcare ops MCP), Doc2Any (local document converter), and cross-platform drawing apps.",
+      "projects.azureHeal":
+        "Terraform-provisioned Azure VMSS + Load Balancer auto-healing web tier, with Docker NGINX serving a static page and /health probes.",
       "projects.careops":
         "Healthcare ops MCP: mock CareOS, OCR, compliance and roster tools, plus a browser Test Console checklist.",
+      "projects.filter.cloud": "Cloud",
       "about.focus": "Focus",
       "about.contact": "Contact",
       "skills.label": "Skills",
@@ -155,6 +163,8 @@
         "Click a screenshot to enlarge. Where a public link exists, open the site or repository separately.",
       "showcase.zoom": "Enlarge",
       "showcase.openSite": "Open site",
+      "showcase.azureHeal.alt": "Azure Auto-Healing Web test page",
+      "showcase.azureHeal.zoomAria": "Enlarge Azure Auto-Healing Web test page",
       "showcase.careops.alt": "CareOps Test Console screenshot",
       "showcase.careops.zoomAria": "Enlarge CareOps Test Console screenshot",
       "showcase.doc2any.alt": "Doc2Any website screenshot",
